@@ -2,8 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+// Componentes:
 import { AppComponent } from './app.component';
-//import { WebSocketService } from "app/services/web-socket.service";
+
+// Servicios
 import { WebSocketService } from 'angular2-websocket-service'
 import { MensajesService } from "app/services/mensajes.service";
 
