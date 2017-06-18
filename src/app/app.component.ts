@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 //import { WebSocketService } from "app/services/web-socket.service";
 
 import { Subscription } from 'rxjs/Subscription'
-import { MensajesService } from "app/services/mensajes.service";
+import { MensajesService } from 'app/services/mensajes.service';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +15,7 @@ export class AppComponent {
   solicitud: any;
   respuesta: any;
 
-  constructor(private _ms: MensajesService) {
+  constructor(public _ms: MensajesService) {
     const stream = this._ms.connect(); //.subscribe(data => console.log('Socket connect: ', data));
  
     this.socketSubscription = stream.subscribe(msg => {
